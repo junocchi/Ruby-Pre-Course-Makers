@@ -1,0 +1,23 @@
+F
+
+Failures:
+
+  1) Q1. Height `puts`es the height of the learner as a number
+     Failure/Error:
+       expect { require_relative "../questions/question_1" }
+         .to output(/\d+/).to_stdout
+
+       expected block to output /\d+/ to stdout, but output nothing
+       Diff:
+       @@ -1 +1 @@
+       -/\d+/
+       +""
+     # ./spec/question_1_spec.rb:3:in `block (2 levels) in <top (required)>'
+
+Finished in 0.03838 seconds (files took 0.13015 seconds to load)
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/question_1_spec.rb:2 # Q1. Height `puts`es the height of the learner as a number
+
